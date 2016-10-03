@@ -1,21 +1,55 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <style>
+        body{
+            text-align:center;
+        }
+        #welcome{
+            color:#0072ff;
+            margin:0;
+            
+        }
+        #descriptiontitle{
+            font-size:2em;
+            color:#0072ff;
+        }
+        #description{
+            color:#0072ff;
+            text-decoration:bold;
+            font-size:1.1em;
+            font:sans-serif;
+            margin:0;
+            max-width:750px;
+            padding:0 25%;
+            text-indent:40px;
+        }
+        #description span{
+            background-color:rgba(0,0,0,0.7);
+        }
+    </style>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="navbar.css" type="text/css"/>
     <title>About Me</title>
 </head>
-<body>
-    <p></p>
+<body background="http://www.astrouw.edu.pl/~pilecki/i_download/
+wallpapers/tile_600x600_7.png">
     <ul id="navbar">
-        <li><a href="index.html"> About Me</a></li>
-        <li><a href="hardware.hml"> Hardware</a></li>
-        <li><a href="calculator.html"> Calculator</a></li>
-        <li><a href="todo.html"> To Do List</a></li>
-        <li><a href="vindinium.html"> Vindinium</a></li>
-        <li><a href="bigproject.html"> Big Project</a></li>
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="hardware.html">Hardware</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="todo.html">To Do List</a></li>
+        <li><a href="vindinium.html">Vindinium</a></li>
+        <li><a href="bigproject.html">Big Project</a></li>
     </ul>
-    <h1>Welcome To My Site!</h1>
+    <h1 id="welcome">Welcome To My Site!</h1>
+    <p id="descriptiontitle">Who am I?</p>
+    <p id="description"> <span>My name is cole, I am a highschool student in the bay area
+    I enjoy spending my time playing video games, hanging out with
+    my friends and working when Im not doing either of those activities.
+    I have a strong interest in computers and thats what 
+    motivated me into taking this computer science class.</span>
+    </p>
     
 </body>
 </html>

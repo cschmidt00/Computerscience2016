@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="navbar.css" type="text/css"/>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+</head>
+<body background="http://www.astrouw.edu.pl/~pilecki/i_download/
+wallpapers/tile_600x600_7.png">
+    <ul id="navbar">
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="hardware.html">Hardware</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="todo.html">To Do List</a></li>
+        <li><a href="vindinium.html">Vindinium</a></li>
+        <li><a href="bigproject.html">Big Project</a></li>
+    </ul>
+  <style>
+    #bar{
+      text-align:center;
+    }
+    #title{
+      text-align:center;
+      color:#0072ff;
+    }
+    #todolist{
+      text-align:center;
+    }
+    #additem{
+        color:#0072ff;
+        font-size:2em;
+        text-decoration:bold;
+    }
+    body{
+        color:#0072ff;
+    }
+    #todolist{
+      font-size:1.5em;
+    }
+  </style>
+  
+  <header><h1 id="title"> To Do List</h1></header>
+    <form id="myform">
+      <div id="bar">
+        <div id="additem">Add item</div>
+        <input type="text" id="newitem" />
+          <select id="dropdown">
+        <option value="none">none</option>
+        <option value="underline">underline</option>
+        <option value="red">red</option>
+        <option value="italics">italics</option>
+        <option value="bold">bold</option>
+    </select>
+        <input type="submit" />
+      </div>
+    </form>
+  </section>
+  <div id="todolist"></div>
+  <footer>
+  </footer>
+  
+<script src="todolist.js"></script>
+</body>
+</html>

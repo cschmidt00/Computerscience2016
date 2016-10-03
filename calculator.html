@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="navbar.css" type="text/css"/>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body background="http://www.astrouw.edu.pl/~pilecki/i_download/
+wallpapers/tile_600x600_7.png">
+    <center>
+    <ul id="navbar">
+        <li><a href="index.html">Home Page</a></li>
+        <li><a href="hardware.html">Hardware</a></li>
+        <li><a href="calculator.html">Calculator</a></li>
+        <li><a href="todo.html">To Do List</a></li>
+        <li><a href="vindinium.html">Vindinium</a></li>
+        <li><a href="bigproject.html">Big Project</a></li>
+    </ul>
+    <style>
+
+    #title{
+      text-align:center;
+      color:#0072ff;
+    }
+    .navbar{
+        text-align:center;
+    }
+    #dropdown{
+        text-align:center;
+    }
+        #header {
+            width:1000px;
+            height:auto;
+            margin:0 auto;
+        }
+    #calculator{
+        text-align:center;
+    }
+    #calculated{
+        color:#0072ff;
+        text-align:center;
+        font-size:2em;
+    }
+    #calculated span{
+        background-color:rgba(0,0,0,0.7);
+    }
+    </style>
+<header><h1 id="title">Calculator</h1></header> 
+<input type ="text" name="input1" style="width:50px;" id="input1">
+    <select id="dropdown">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="x">x</option>
+        <option value="/">/</option>
+        <option value="^">^</option>
+    </select>
+    <input type ="text" name="input2" style="width:50px;" id="input2">
+    <input type="button" value="Calculate" id="submitButton" />
+
+    <p id="calculated">The answer is: <span id="display"></span></p>
+ <script src="calc.js" ></script> </center>
+</body>
+</html>
