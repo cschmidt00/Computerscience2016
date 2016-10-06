@@ -7,21 +7,53 @@
     <style>
         body{
             color:#0072ff;
+            background-size:25%;
         }
-        #hdd:hover ~ #hddexplain{
-        left:25%;
+        #harddrive:hover ~ #hddexplain{
+        left:0%;
         } 
         #hddexplain{
               position:relative;
-              left:-50px;
+              left:-5000px;
+              transition:all 1s linear;
+        }
+        #ram:hover ~ #ramexplain{
+        left:0%;
+        } 
+        #ramexplain{
+              position:relative;
+              left:-5000px;
+              transition:all 1s linear;
+        }
+        #gpu:hover ~ #gpuexplain{
+        left:0%;
+        } 
+        #gpuexplain{
+              position:relative;
+              left:-5000px;
+              transition:all 1s linear;
+        }
+        #cpu:hover ~ #cpuexplain{
+        left:0%;
+        } 
+        #cpuexplain{
+              position:relative;
+              left:-5000px;
+              transition:all 1s linear;
+        }
+                #motherboard:hover ~ #motherboardexplain{
+        left:0%;
+        } 
+        #motherboardexplain{
+              position:relative;
+              left:-5000px;
               transition:all 1s linear;
         }
   
     </style>
 </head>
 <center>
-<body background="http://www.astrouw.edu.pl/~pilecki/i_download/
-wallpapers/tile_600x600_7.png">
+<body background="http://www.zingerbug.com/Backgrounds/background_images/blue_flame_fractal_background_seamless.jpg">
     <ul id="navbar">
         <li><a href="index.html">Home Page</a></li>
         <li><a href="hardware.html">Hardware</a></li>
@@ -30,22 +62,35 @@ wallpapers/tile_600x600_7.png">
         <li><a href="vindinium.html">Vindinium</a></li>
         <li><a href="bigproject.html">Big Project</a></li>
     </ul>
-
-    <h1>Hardware!</h1>
-    <p id="what"> What is hardware?</p>
-    <p id="hardwareis"> Hardware is the things inside of your computer that make
-    it able to do all of the amazing <br> things that it does. There area
-    There are 5 essentials when it comes to hardware, <br> there are 
-    motherboards, graphics cards, CPUs, RAM, and harddrives.</p>
-    <ul>
-        <li id="motherboard">Motherboard<br><br></li>
-        <li id="cpu">CPU<br><br></li>
-        <li id="gpu">Graphics Card<br><br></li>
-        <li id="ram">RAM<br><br></li>
-        <li id="hdd">Harddrive<br><br></li>
-    </ul>
-    <P id="hddexplain"> </P>
+    <center>
+    <h3>Hardware!</h3>
+    <p id="hardwareis"> Hardware is all of the things inside of your computer that make
+    it able to do all of <br> the amazing things that it does. There area
+    There are 5 essentials when it comes to<br> hardware, there are 
+    motherboards, graphics cards, CPUs, RAM, and harddrives. <br>(Hover
+    over each for more information about each part)</p>
     
+    <p id="motherboard">Motherboard</p>
+    <p id="motherboardexplain">The motherboard is a circut that connects
+    all of the other parts in <br> the computer letting them communicate with
+    eachother.</p>
+    <p id="cpu">CPU</p>
+    <p id="cpuexplain">The CPU is the central processing unit and what it
+    does is it tells all of the other parts what to do <br> and basically gives
+    instructions to other parts on what to do.</p>
+    <p id="gpu">Graphics Card</p>
+    <p id="gpuexplain">The Graphics card does video calculations to make
+    the screen of your computer <br> to display what you want it to display 
+    and this makes the CPUs work easier</p>
+    <p id="ram">RAM</p>
+    <p id="ramexplain">RAM stands for Random Access Memory, this is where
+    information <br>that is only needed for a short time and dont need to be 
+    saved go.</p>
+    <p id="harddrive">Harddrive</p>
+    <P id="hddexplain">Harddrives are your main, perminate storage 
+    on your computer. This is where <br>files that you download are saved 
+    and the computer does not delete these files unless you tell it to.</P>
+    </center>
 </body>
 </center>
 </html>
