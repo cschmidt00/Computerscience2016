@@ -33,7 +33,6 @@ form.addEventListener( 'submit', function(evt) {
 todo.addEventListener( 'click', function(evt) {
   var tar = evt.target;
 
-  
   if(tar.style.textDecoration === "line-through"){
     tar.parentNode.removeChild(tar);
   }
