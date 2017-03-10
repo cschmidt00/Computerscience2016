@@ -1,16 +1,13 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="navbar.css" type="text/css"/>
+    <link rel="stylesheet" href="navbar.css" type="text/css" />
     <meta charset="UTF-8">
     <title>Vindinium Page</title>
-    <style>
-        body{
-            background-size:25%;
-        }
-    </style>
 </head>
-<body background="http://www.zingerbug.com/Backgrounds/background_images/blue_flame_fractal_background_seamless.jpg">
+
+<body background="CompSciBackground.jpg">
     <ul id="navbar">
         <li><a href="index.html">Home Page</a></li>
         <li><a href="hardware.html">Hardware</a></li>
@@ -20,5 +17,128 @@
         <li><a href="bigproject.html">Big Project</a></li>
         <li><a href="howto.html">How To Page</a></li>
     </ul>
+    <style>
+        body {
+            background-size: 25%;
+        }
+        
+        #title {
+            color: #0072ff;
+        }
+        
+        #vindiniumexplain {
+            color: #0072ff;
+            font-size: 1.2em;
+        }
+        
+        #AItitle {
+            color: #0072ff;
+        }
+        
+        #AIexplain {
+            color: #0072ff;
+            font-size: 1.2em;
+        }
+        
+        #mycodetitle {
+            color: #0072ff;
+        }
+        
+        #mycodeexplain {
+            color: #0072ff;
+            font-size: 1.2em;
+        }
+        
+        #WhatToDoTitle {
+            color: #0072ff;
+            text-align: center;
+        }
+        
+        #WhatToDoExplain {
+            color: #0072ff;
+            font-size: 1.2em;
+            text-align: center;
+            margin-right: 150px;
+            margin-left: 150px;
+        }
+        
+        #GlobalDataTitle {
+            color: #0072ff;
+            text-align: center;
+        }
+        
+        #GlobalDataExplain {
+            color: #0072ff;
+            font-size: 1.2em;
+            text-align: center;
+            margin-right: 150px;
+            margin-left: 150px;
+        }
+        
+        #HowToDoTitle {
+            color: #0072ff;
+            text-align: center;
+        }
+        
+        #HowToDoExplain {
+            color: #0072ff;
+            font-size: 1.2em;
+            text-align: center;
+            margin-right: 150px;
+            margin-left: 150px;
+        }
+    </style>
+    <center>
+        <h1 id="title">What is Vindinium?</h1>
+    </center>
+    <center><img src="vindinium.png" style="height:250px;"></center>
+    <center>
+        <p id="vindiniumexplain">Vindinium is a game where players code their bots to collect mines, fight other players to steal their mines, <br>and collect taverns to gather health.The way to win a game is to have the most gold at the end of the turns, to do<br> this you need
+            to have the most amount of mines. you respawn instantly, but the person who killed you gets all of your mines!<br> ____________________________________________________________________________________
+        </p>
+    </center>
+    <center>
+        <h2 id="AItitle">What is AI?</h2>
+    </center>
+    <center>
+        <p id="AIexplain">AI stands for Artificial Intelligence, meaning it has some logic or decision making. <br> What this looks like when it comes to coding is the bot has conditions where it will decide what is the best thing to do.<br> An example of this is where
+            my code looks like the following:<br><br> if (bot.yourBot.life
+            <=7 0 & bot.yourBot.gold> 3) {<br> task = "tavern";<br> }
+                <br><br> This code is checking for when my bots health is less than 70 and aslong as I have more than 3 gold it will set
+                <br> my task to tavern which later my bot checks what the task is set to and acts based on what its task is set to. <br> ____________________________________________________________________________________
+        </p>
+    </center>
+    <center>
+        <h2 id="mycodetitle">How does my bot work?</h2>
+    </center>
+    <center>
+        <p id="mycodeexplain">There are three componenets to my bot, there is What my bot is going to do, how its going to do it, and global data.</p>
+    </center>
+    <h3 id=WhatToDoTitle>What To Do</h3>
+    <center><img src="VindWhatToDo.png" style="height:200px;"></center>
+    <p id="WhatToDoExplain">This image includes the code that determines what to do, the way it works is the code checks to see if my bots health is equal to or less than 70 and my bot has more than 3 gold, it will set my task to tavern. if I have more mines than the leader
+        and my health is less than 90 It also sets the task to tavern. This basically means if I have the most amount of mines it will make my bot play more defensively. The next decision my bot can make is to kill the leader, if the leader has more mines
+        than me and also has more than 1 (so my bot doesnt kill people at the start who have 1 mine) it will set my task to killhim. At the start of the game before my bot loses health and before there is a leader to kill, my bot checks to see if my minecount
+        is more than half the freemines left avaliable and make sure I have enough health to gather mines, more than 70. if I have enough health and there are enough free mines, my code will set the task to freemines the last thing my bot can do is steal
+        a mine, this checks if there is an owned mine within 6 units and if there is than my bots task is set to steal
+        <br> ____________________________________________________________________________________</p>
+    <h3 id=GlobalDataTitle>Global Data</h3>
+    <center><img src="VindGlobalData.png" style="height:400px;"></center>
+    <p id="GlobalDataExplain"> This image shows off the global data that is essential for the code to know how to complete the tasks it is asigned. At the top there is a variable called "myDir" which is used later on to tell the bot which direction to walk in. the variable "myPos"
+        is used to keep track of wherever my bot is whenever I need that informaiton. The variable "enemyMines" creates an array of the mines that are owned by the enemy bots inorder to find the closest enemy owned mine later on. The variable "leader"
+        cycles through the enemyBots array and checks to see if the enemyBot minecount that it is currently checking is greater than the leaders minecount and if it is, it sets that bot as the leader. The variable called "ownedMines" cycles through the
+        enemyMines array and checks the distance between myPos and an enemy mine and checks all of the others comparing which one is closer and sets that to ownedMines closestMine checks all of the freemines and find the closest one.
+        <br> ____________________________________________________________________________________
+    </p>
+    <h3 id=HowToDoTitle>How to do</h3>
+    <center><img src="VindHowToDo.png" style="height:350px;"></center>
+    <p id="HowToDoExplain">Finally this last picture shows how to do the tasks that are assigned to the bot. the first part of the picture is saying if the task is set to tavern, set myDir to find a path from myPos to the closestTavern. The next line says if my task is not
+        tavern but is freemines it will find the closest path from myPos to the closestMine. if the task is set to killhim it will find the closest path from myPos to the leader.posArray (the leader variable is a bot id so the posArray gives that bots
+        position) when the task is set to steal it sets myDir to find a path from myPos to ownedMines. If my bot is in no condition to do any of these tasks the code sets myDir to "none" and at the end there is a section of code to check if myDir is set
+        to none and if it is it allows your bot to move in a random direction.
+        <br> ____________________________________________________________________________________
+    </p>
+
 </body>
+
 </html>
