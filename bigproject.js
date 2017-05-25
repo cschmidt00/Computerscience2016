@@ -65,10 +65,10 @@ update();
 
 function update() {
     ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
-    //localstorage for scoreboard, it checks if my players score is greater than the current highscore and if so it sets my
+    //localstorage for the highscore, it checks if my players score is greater than the current highscore and if so it sets my
     //players score to the highscore
-    var scoreboard = localStorage.getItem("topscore");
-    if (player.score >= scoreboard) {
+    var highscore = localStorage.getItem("topscore");
+    if (player.score >= highscore) {
         localStorage.setItem("topscore", player.score);
     }
     //This checks to see if the enemy touches the bottom and moves them back uptop 
@@ -97,7 +97,7 @@ function update() {
             ctx.font = "40px Arial";
             ctx.fillText("Score: " + player.score, myCanvas.width / 5, myCanvas.height / 3);
             ctx.font = "40px Arial";
-            ctx.fillText("Highscore: " + scoreboard, myCanvas.width / 5, myCanvas.height / 2);
+            ctx.fillText("Highscore: " + highscore, myCanvas.width / 5, myCanvas.height / 2);
             document.getElementById("respawn").style.top = "450px";
         }
         enemy[i].y += enemy[i].speed;
@@ -139,7 +139,7 @@ function update() {
             ctx.fillText("Score: " + player.score, myCanvas.width / 5, myCanvas.height / 3);
             ctx.font = "40px Arial";
             ctx.font = "40px Arial";
-            ctx.fillText("Highscore: " + scoreboard, myCanvas.width / 5, myCanvas.height / 2);
+            ctx.fillText("Highscore: " + highscore, myCanvas.width / 5, myCanvas.height / 2);
             document.getElementById("respawn").style.top = "450px";
         }
         //If the players score gets to 5, it speeds up 2 of the enemies and makes 2 of them start to move.
@@ -282,6 +282,6 @@ document.body.addEventListener("keydown", function(e) {
 document.body.addEventListener("keyup", function(e) {
     keys[e.keyCode] = false;
 });
-//github info--
+//--github info--
 //cschmidt00
 //comp
